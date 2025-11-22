@@ -1,1 +1,42 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --bg-image: repeating-linear-gradient(
+      to right, 
+      #d3d3d3 0,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ), 
+    repeating-linear-gradient(
+      to bottom, 
+      #d3d3d3 0,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(
+      to bottom,
+      #e7e7e7 0.01%,
+      #1a1a1a
+    );
+  --button-text-color: #fff;
+  --card-title-font-weight: 700;
+  --card-inline-size: clamp(min(100%, 375px), 50vw, 700px);
+  --font-accent: 'PressStart2P-Regular';
+  --bg-color: #fff;
+  --heart-hover: #000;
+  --main-color: #000;
+  --modal-padding-inline: 30px;
+  --accent-font-size: 0.875rem;
+  --card-font-weight: 400;
+  --main-font-size: 1.125rem;
+  --floppy-size: 21px;
+  --font: 'Inter-Variable';
+}
+
+/* для телефона */
+@media (width <= 375px) {
+  :root {
+    --modal-padding-inline: 40px;
+    --floppy-size: 28px;
+  }
+}
