@@ -1,1 +1,2 @@
-В этой папке будут храниться все необходимые SVG-файлы для сайта.
+# Проект "Закрывающий тег"
+https://github.com/qwasxxx/zakrivayuschiy-teg-ad
