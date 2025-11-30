@@ -1,42 +1,33 @@
 :root {
-  --bg-image: repeating-linear-gradient(
-      to right, 
-      #d3d3d3 0,
-      #d3d3d3 2px,
-      transparent 2px,
-      transparent 4px
-    ), 
-    repeating-linear-gradient(
-      to bottom, 
-      #d3d3d3 0,
-      #d3d3d3 2px,
-      transparent 2px,
-      transparent 4px
-    ),
-    linear-gradient(
-      to bottom,
-      #e7e7e7 0.01%,
-      #1a1a1a
-    );
-  --button-text-color: #fff;
-  --card-title-font-weight: 700;
-  --card-inline-size: clamp(min(100%, 375px), 50vw, 700px);
-  --font-accent: 'PressStart2P-Regular';
-  --bg-color: #fff;
-  --heart-hover: #000;
-  --main-color: #000;
-  --modal-padding-inline: 30px;
-  --accent-font-size: 0.875rem;
-  --card-font-weight: 400;
-  --main-font-size: 1.125rem;
-  --floppy-size: 21px;
-  --font: 'Inter-Variable';
+	--main-font: 'Inter';
+	--accent-font: 'PressStart2P';
+    --simple-font-weight: 400;
+    --title-font-weight: 700;
+	--font-size: 18px;
+	--font-size-button: 14px;
+	--primary-color: #fff;
+	--color-accent: #000;
+	--border-color: #000;
+	--title-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+	--card-width: clamp(23.4375rem, 16.2852rem + 30.5164svi, 43.75rem);
+	--background-image: 
+        repeating-linear-gradient(90deg,#d3d3d3 0 2px,rgba(0, 0, 0, 0) 2px 4px),
+		repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgba(0, 0, 0, 0) 2px 4px),
+		linear-gradient(#e7e7e7, #1a1a1a);
+	--backdrop-color: rgb(0 0 0 / 0.75);
+	--border-color-button: #000;
+	--border-color-label: #fff;
+	--background-color: #fff;
+	--heart-color-contour: #000;
+	--heart-color-core: #fff;
+	--heart-color-main-body: #ff0000;
+	--heart-color-sparks: #ff0000;
+	--heart-color-fill: #ff0000;
 }
 
-/* для телефона */
 @media (width <= 375px) {
-  :root {
-    --modal-padding-inline: 40px;
-    --floppy-size: 28px;
-  }
+	:root {
+		--title-font-size: clamp(2.625rem, 0.0795rem + 12.7273vw, 3.0625rem);
+		--card-width: 100%;
+	}
 }
